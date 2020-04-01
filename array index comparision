@@ -1,0 +1,30 @@
+import java.util.Arrays;
+public class Main
+{
+public static void main(String args[])
+{
+int[] arr1={1,2,3};
+int[] arr2={3,2,1};
+int a=0,b=0;
+if(arr1.length==arr2.length)
+{
+int i=0;
+for(i=0;i<arr1.length-1;i++)
+{
+if(arr1[i]>arr2[i])
+{
+a++;
+System.out.println(a+" "+b);
+}
+else if(arr1[i]<arr2[i])
+{
+b++;
+System.out.println(a+" "+b);
+}
+else
+{
+continue;
+}}
+}
+}
+}
