@@ -1,0 +1,29 @@
+from operator import add
+a,b,c=map(int,input().split())
+d=list(map(int,input().split()))[0:b]
+e=list(map(int,input().split()))[0:c]
+f=list(map(add,d,e))
+c=max(f)
+if(c<a):
+    print(c)
+else:
+    print(-1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
