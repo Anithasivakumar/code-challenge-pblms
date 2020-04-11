@@ -1,0 +1,31 @@
+a,b,c=map(int,input().split())
+t=0
+if(a>b):
+    t=a
+else:
+    t=b
+while(True):
+    if((t%a==0)and(t%b==0)):
+        lcm1=t
+        break
+    t=t+1
+if(b>c):
+    t=b
+else:
+    t=c
+while(True):
+    if((t%b==0)and(t%c==0)):
+        lcm2=t
+        break
+    t=t+1
+if(c>a):
+    t=c
+else:
+    t=a
+while(True):
+    if((t%c==0)and(t%c==0)):
+        lcm3=t
+        break
+    t=t+1
+d=max(lcm1,lcm2,lcm3)
+print(d)
